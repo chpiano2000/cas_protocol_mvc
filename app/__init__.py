@@ -8,6 +8,6 @@ app.config['SECRET_KEY'] = config('SECRET_KEY')
 client = pymongo.MongoClient(config('MONGO_URI'))
 db = client["Test"]
 
-BASE_URL = config('BASE_URL')
+
 
 from app import routers
