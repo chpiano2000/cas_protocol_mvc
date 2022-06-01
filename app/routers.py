@@ -20,7 +20,7 @@ def home():
         if user_info.status_code == 401:
             return redirect(url_for("login"))
         else:
-            print(user_info.json().get("userInfo").get("token"))
+            print(user_info.json().get("userInfo"))
             return render_template("home.html", user_info=user_info)
     
     else:
